@@ -24,6 +24,7 @@ pip3 install -r requirements.txt
 Lane_RSR is trained and tested on CULane dataset.
 
 CULane dataset is available in <https://xingangpan.github.io/projects/CULane.html>
+Locate the dataset in directory ../Dataset
 
 Lane Reconstruction
 -------------------
@@ -44,4 +45,16 @@ python3 main.py --mode = test
 
 Lane Restoration
 -----------------
-TBU
+```bash
+cd bi-CRRN
+```
+
+train
+```bash
+python3 train.py
+```
+
+test
+```bash
+python3 test.py
+```
