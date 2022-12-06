@@ -10,7 +10,13 @@ Lane_RSR is a cascaded framework for robust lane detection.
 
 It consists of reconstruction module, segmentation module, and restoration module.
 
-This implementation uses ENet-SAD model as segmentation module.
+The reconstruction module reconstructs the ruined lane marks.
+
+Any lane detection network can be used as segmentation module, 
+but this implementation uses ENet-SAD model as segmentation module.
+
+The restoration module restores shape of the detected lanes.
+
 
 ![framework](https://user-images.githubusercontent.com/62361339/147280796-7fc24e41-f7a9-4dbf-9047-0272e755a775.PNG)
 
